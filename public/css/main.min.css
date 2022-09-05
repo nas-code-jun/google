@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,700&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic");
+main .menu .main-menu .information div button, main .main-content .content .article .text-block > button, main .main-content .content .last-published .last-article > button, main .main-content .content .courses .course-box button {
+  background: #fff;
+  border: 2px solid #609CF5;
+  border-radius: 4px;
+  color: #609CF5;
+  font-weight: 800;
+  font-size: 14px;
+  transition: background 600ms ease; }
+
+h3, main .main-content .content .last-published > h3, main .main-content .content .info-block h3 {
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  border-bottom: 2px solid #609CF5;
+  padding-bottom: 10px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none; }
+
+html, body {
+  font-family: "Roboto";
+  font-size: 14px;
+  height: 100%;
+  min-height: 100%;
+  color: #212325; }
+
+h3 {
+  color: #212325; }
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #494c4d;
+  line-height: 180%; }
+
+main {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%; }
+  main .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    min-height: 100%;
+    background: #f5f6f7;
+    font-size: 18px; }
+    main .menu .search {
+      width: 100%;
+      padding: 15px 10%;
+      background: #eff1f2; }
+      main .menu .search input {
+        width: 80%;
+        height: 25px;
+        font-size: 14px;
+        color: #91969a;
+        text-indent: 10px;
+        border: 1px solid #fff;
+        border-radius: 5px; }
+    main .menu .main-menu {
+      padding: 10px; }
+      main .menu .main-menu h3 {
+        margin: 20px 0; }
+      main .menu .main-menu .menu-bar li {
+        color: #212325;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 20px 0;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e0e3e5;
+        text-transform: uppercase;
+        transition: color 600ms ease; }
+      main .menu .main-menu .menu-bar li:hover {
+        color: #609CF5;
+        cursor: pointer; }
+      main .menu .main-menu .information {
+        font-size: 18px; }
+        main .menu .main-menu .information div {
+          border-bottom: 1px solid #e0e3e5;
+          margin-bottom: 20px; }
+          main .menu .main-menu .information div .img-holder {
+            width: 100%;
+            height: 100px;
+            background: #b7b7b7;
+            border-radius: 4px;
+            overflow: hidden; }
+            main .menu .main-menu .information div .img-holder img {
+              width: 100%;
+              height: 100%;
+              transition: all 600ms ease; }
+            main .menu .main-menu .information div .img-holder img:hover {
+              transform: scale(1.1, 1.1);
+              cursor: pointer; }
+          main .menu .main-menu .information div .img-holder:hover {
+            cursor: pointer; }
+          main .menu .main-menu .information div p {
+            margin: 20px 0; }
+          main .menu .main-menu .information div button {
+            width: 120px;
+            height: 50px;
+            margin-bottom: 10px; }
+          main .menu .main-menu .information div button:hover {
+            background: #e5e9e9;
+            cursor: pointer; }
+      main .menu .main-menu .helps p {
+        margin: 20px 0; }
+      main .menu .main-menu .helps ul {
+        margin-top: 20px;
+        list-style-type: none; }
+        main .menu .main-menu .helps ul li {
+          display: flex;
+          font-size: 14px;
+          font-weight: 400;
+          padding: 25px 0;
+          color: #494c4d;
+          border-bottom: 1px solid #e0e3e5; }
+          main .menu .main-menu .helps ul li i {
+            width: 26px;
+            height: 22px;
+            display: block;
+            line-height: 24px;
+            color: #609CF5;
+            margin-right: 10px; }
+          main .menu .main-menu .helps ul li a {
+            color: #494c4d; }
+          main .menu .main-menu .helps ul li a:hover {
+            color: #609CF5; }
+    main .menu .menu-footer {
+      margin: 20px 0;
+      font-size: 10px;
+      font-weight: 300;
+      color: #494c4d; }
+  main .main-content {
+    width: 100%;
+    background: #fff;
+    transition: all 1200ms ease;
+    z-index: 99; }
+    main .main-content .btn-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 55px;
+      height: 55px; }
+      main .main-content .btn-menu i {
+        color: #609CF5;
+        font-size: 30px; }
+    main .main-content .btn-menu:hover {
+      cursor: pointer; }
+    main .main-content .content {
+      width: 90%;
+      margin: 30px 5%;
+      background: #fff; }
+      main .main-content .content > h3 {
+        display: block;
+        border-bottom: 2px solid #609CF5;
+        padding-bottom: 10px; }
+      main .main-content .content .article {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+        border-top: 1px solid #b2f6bd;
+        border-bottom: 2px solid #e0e3e5; }
+        main .main-content .content .article .text-block, main .main-content .content .article .img-holder {
+          width: 46%; }
+        main .main-content .content .article .text-block h1 {
+          font-size: 36px;
+          font-weight: 800;
+          color: #494c4d; }
+        main .main-content .content .article .text-block p:first-of-type {
+          color: #212325;
+          margin-top: 15px;
+          text-transform: uppercase; }
+        main .main-content .content .article .text-block p:last-of-type {
+          color: #494c4d;
+          margin-top: 20px;
+          font-size: 14px; }
+        main .main-content .content .article .text-block > button {
+          width: 196px;
+          height: 50px;
+          margin-top: 25px; }
+        main .main-content .content .article .text-block button:hover {
+          background: #e5e9e9;
+          cursor: pointer; }
+        main .main-content .content .article .img-holder {
+          height: auto;
+          background: #b7b7b7;
+          border-radius: 4px;
+          overflow: hidden; }
+          main .main-content .content .article .img-holder img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transition: all 600ms ease; }
+          main .main-content .content .article .img-holder img:hover {
+            transform: scale(1.1, 1.1);
+            cursor: pointer; }
+        main .main-content .content .article .img-holder:hover {
+          cursor: pointer; }
+      main .main-content .content .last-published {
+        margin-top: 50px; }
+        main .main-content .content .last-published > h3 {
+          font-size: 24px;
+          font-weight: 800; }
+        main .main-content .content .last-published > div {
+          display: flex;
+          justify-content: space-between;
+          width: 100%; }
+        main .main-content .content .last-published > div:first-of-type {
+          margin-top: 50px; }
+        main .main-content .content .last-published > div:not(:last-of-type) {
+          border-bottom: 2px solid #e0e3e5; }
+        main .main-content .content .last-published > div:not(.first-block) .last-article .img-holder {
+          margin-top: 30px; }
+        main .main-content .content .last-published .last-article {
+          display: flex;
+          flex-direction: column;
+          width: 49%; }
+          main .main-content .content .last-published .last-article > .img-holder {
+            height: 172px;
+            border-radius: 5px;
+            background: #c4c4c4;
+            overflow: hidden; }
+            main .main-content .content .last-published .last-article > .img-holder img {
+              width: 100%;
+              height: 100%;
+              transition: all 600ms ease; }
+            main .main-content .content .last-published .last-article > .img-holder img:hover {
+              transform: scale(1.1, 1.1);
+              cursor: pointer; }
+          main .main-content .content .last-published .last-article .img-holder:hover {
+            cursor: pointer; }
+          main .main-content .content .last-published .last-article p:first-of-type {
+            font-size: 16PX;
+            font-weight: 800;
+            margin-top: 15px; }
+          main .main-content .content .last-published .last-article p:last-of-type {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #494c4d; }
+          main .main-content .content .last-published .last-article > button {
+            width: 120px;
+            height: 50px;
+            margin: 25px 0; }
+          main .main-content .content .last-published .last-article button:hover {
+            background: #e5e9e9;
+            cursor: pointer; }
+        main .main-content .content .last-published .last-article:first-of-type {
+          border-right: 2px solid #e0e3e5;
+          padding-right: 30px; }
+        main .main-content .content .last-published .last-article:last-of-type {
+          padding-left: 30px; }
+      main .main-content .content .courses {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 40px;
+        padding-top: 30px;
+        border-top: 2px solid #e0e3e5; }
+        main .main-content .content .courses .course-box {
+          width: 18%; }
+          main .main-content .content .courses .course-box .img-course {
+            background: #b7b7b7;
+            width: 100%;
+            height: 120px;
+            overflow: hidden;
+            transition: all 500ms ease; }
+            main .main-content .content .courses .course-box .img-course img {
+              width: 100%;
+              height: 100%; }
+          main .main-content .content .courses .course-box .img-course:hover {
+            cursor: pointer;
+            box-shadow: 0px 0px 13px 1px #3A3A3A; }
+          main .main-content .content .courses .course-box h3 {
+            border: none;
+            font-size: 16px;
+            font-weight: 800;
+            margin-top: 10px; }
+          main .main-content .content .courses .course-box p {
+            margin-top: 10px;
+            color: #494c4d; }
+          main .main-content .content .courses .course-box button {
+            width: 80px;
+            height: 34px;
+            margin-top: 15px;
+            font-size: 10px;
+            font-weight: 800; }
+          main .main-content .content .courses .course-box button:hover {
+            background: #e5e9e9;
+            cursor: pointer; }
+      main .main-content .content .info-block {
+        margin: 40px 0; }
+        main .main-content .content .info-block h3 {
+          font-size: 24px;
+          font-weight: 800; }
+        main .main-content .content .info-block > div {
+          display: flex;
+          justify-content: space-around;
+          margin-top: 30px; }
+          main .main-content .content .info-block > div .client, main .main-content .content .info-block > div .youtube {
+            width: 30%;
+            padding-left: 50px;
+            position: relative; }
+            main .main-content .content .info-block > div .client i, main .main-content .content .info-block > div .youtube i {
+              position: absolute;
+              top: 35%;
+              left: -20px;
+              width: 45px;
+              height: 38px;
+              font-size: 30px;
+              color: #609CF5; }
+            main .main-content .content .info-block > div .client span, main .main-content .content .info-block > div .youtube span {
+              font-style: 16px;
+              font-weight: 800; }
+            main .main-content .content .info-block > div .client p, main .main-content .content .info-block > div .youtube p {
+              margin-top: 15px;
+              color: #494c4d;
+              font-size: 14px;
+              font-weight: 400; }

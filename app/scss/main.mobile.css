@@ -1,0 +1,387 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic');
+@import "vars";
+@import "extends";
+
+*  {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html, body {
+  font-family: 'Roboto', ;
+  font-size: 14px;
+  height: 100%;
+  min-height: 100%;
+  color: #212325;
+}
+
+h3 {
+  @extend %heading-line;
+  color: $headingColor;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  color: $textColor;
+}
+
+main {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+  .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    min-height: 100%;
+    background: $menuColor;
+    font-size: 18px;
+
+    .search {
+      width: 100%;
+      padding: 15px 10%;
+      background: #eff1f2;
+
+      input {
+        width: 80%;
+        height: 25px;
+        font-size: 14px;
+        color: #91969a;
+        text-indent: 10px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+      }
+    }
+
+    .main-menu {
+      padding: 10px;
+
+      h3 {
+        margin: 20px 0;
+      }
+
+      .menu-bar {
+
+        li {
+          color: #212325;
+          font-size: 14px;
+          font-weight: 400;
+          margin: 20px 0;
+          padding-bottom: 10px;
+          border-bottom: 1px solid $borderColor;
+          text-transform: uppercase;
+        }
+      }
+
+      .information {
+        font-size: 18px;
+
+        div {
+          border-bottom: 1px solid $borderColor;
+          margin-bottom: 20px;
+
+          .img-holder {
+            width: 100%;
+            height: 100px;
+            background: $imgHolderColor;
+            border-radius: 4px;
+          }
+
+          p {
+            margin: 20px 0;
+          }
+
+          button {
+            @extend %button;
+
+            width: 120px;
+            height: 50px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .helps {
+
+        p {
+          margin: 20px 0;
+        }
+
+        ul {
+          margin-top: 20px;
+          list-style-type: none;
+
+          li {
+            display: flex;
+            font-size: 14px;
+            font-weight: 400;
+            padding: 25px 0;
+            color: $textColor;
+            border-bottom: 1px solid $borderColor;
+
+            i {
+              width: 26px;
+              height: 22px;
+              display: block;
+              line-height: 24px;
+              color: $mainColor;
+              margin-right: 10px;
+            }
+
+            a {
+              color: $textColor;
+            }
+
+            a:hover {
+              color: $mainColor;
+            }
+          }
+        }
+      }
+    }
+    .menu-footer {
+      margin-top: 20px;
+      font-size: 10px;
+      font-weight: 300;
+      color: $textColor;
+    }
+  }
+
+  .main-content {
+    width: 100%;
+    background: #fff;
+    transition: all 1200ms ease;
+    z-index: 99;
+
+    .btn-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 55px;
+      height: 55px;
+
+      i {
+        color: $mainColor;
+        font-size: 30px;
+      }
+    }
+
+    .content {
+      width: 90%;
+      margin: 30px 5%;
+      background: #fff;
+
+      > h3 {
+        display: block;
+        border-bottom: 1px solid $mainColor;
+        padding-bottom: 10px;
+      }
+
+      .article {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+        border-top: 1px solid #b2f6bd;
+        border-bottom: 2px solid $borderColor;
+
+
+        .text-block, .img-holder {
+          width: 46%;
+        }
+
+        .text-block {
+
+          h1 {
+            font-size: 36px;
+            font-weight: 800;
+            color: $textColor;
+          }
+
+          p:first-of-type {
+            color: $headingColor;
+            margin-top: 15px;
+            text-transform: uppercase;
+          }
+
+          p:last-of-type {
+            color: $textColor;
+            margin-top: 20px;
+            font-size: 14px;
+          }
+
+          > button {
+            @extend %button;
+            width: 196px;
+            height: 50px;
+            margin-top: 25px;
+          }
+        }
+
+        .img-holder {
+          background: $imgHolderColor;
+          border-radius: 4px;
+        }
+      }
+
+      .last-published {
+        margin-top: 50px;
+
+        > h3 {
+          @extend %heading-line;
+
+          font-size: 24px;
+          font-weight: 800;
+        }
+
+        > div {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+        }
+
+        > div:first-of-type {
+          margin-top: 50px;
+        }
+
+        > div:not(:last-of-type) {
+          border-bottom: 2px solid $borderColor;
+        }
+
+        > div:not(.first-block) .last-article .img-holder {
+          margin-top: 30px;
+        }
+
+        .last-article {
+          display: flex;
+          flex-direction: column;
+          width: 49%;
+
+
+
+          > .img-holder {
+            height: 172px;
+            border-radius: 5px;
+            background: #c4c4c4;
+
+          }
+
+          p:first-of-type {
+            font-size: 16PX;
+            font-weight: 800;
+            margin-top: 15px;
+          }
+
+          p:last-of-type {
+            margin-top: 15px;
+            font-size: 14px;
+            color: $textColor;
+          }
+
+          > button {
+            @extend %button;
+            width: 120px;
+            height: 50px;
+            margin: 25px 0;
+          }
+        }
+
+        .last-article:first-of-type {
+          border-right: 2px solid $borderColor;
+          padding-right: 30px;
+        }
+
+        .last-article:last-of-type {
+          padding-left: 30px;
+        }
+      }
+
+      .courses {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 40px;
+        padding-top: 30px;
+        border-top: 2px solid $borderColor;
+
+        .course-box {
+          width: 18%;
+
+          .img-course {
+            background: $imgHolderColor;
+            width: 100%;
+            height: 120px;
+          }
+
+          h3 {
+            font-size: 16px;
+            font-weight: 800;
+            margin-top: 5px;
+          }
+
+          p {
+            margin-top: 10px;
+            color: $textColor;
+          }
+
+          button {
+            @extend %button;
+            width: 80px;
+            height: 34px;
+            margin-top: 15px;
+            font-size: 10px;
+            font-weight: 800;
+          }
+        }
+      }
+
+      .info-block {
+        margin: 40px 0;
+
+        h3 {
+          @extend %heading-line;
+          font-size: 24px;
+          font-weight: 800;
+        }
+
+        > div {
+          display: flex;
+          justify-content: space-around;
+          margin-top: 30px;
+
+          .client, .youtube {
+            width: 30%;
+            padding-left: 50px;
+            position: relative;
+
+            i {
+              position: absolute;
+              top: 35%;
+              left: -20px;
+              width: 45px;
+              height: 38px;
+              font-size: 30px;
+              color: $mainColor;
+            }
+
+            span {
+              font-style: 16px;
+              font-weight: 800;
+            }
+
+            p {
+              margin-top: 15px;
+              color: $textColor;
+              font-size: 14px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+}

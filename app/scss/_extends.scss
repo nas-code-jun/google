@@ -1,0 +1,17 @@
+%button {
+  background: #fff;
+  border: 2px solid $mainColor;
+  border-radius: 4px;
+  color: $mainColor;
+  font-weight: 800;
+  font-size: 14px;
+  transition: background 600ms ease;
+}
+
+%heading-line {
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  border-bottom: 2px solid $mainColor;
+  padding-bottom: 10px;
+}
